@@ -9,6 +9,8 @@ var verb = 0;
 var person = 0;
 
 function start(){
+    document.getElementById("loesung").textContent = "";
+    
     var WortVorgabe = document.getElementById("WortVorgabe");
 
     verb = Math.floor(Math.random() * verbInfinitif.length);
