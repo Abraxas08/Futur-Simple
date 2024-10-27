@@ -11,7 +11,7 @@ var person = 0;
 // Füge den Event-Listener hier global hinzu
 document.addEventListener("DOMContentLoaded", function () {
     // Event-Listener für das Eingabefeld hinzufügen
-    document.getElementById("sample3").addEventListener("keydown", function(event) {
+    document.getElementById("sample3").addEventListener("keyup", function(event) {
         korrigieren(event, verb, person);
     });
 
