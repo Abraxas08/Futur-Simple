@@ -9,8 +9,6 @@ var verb = 0;
 var person = 0;
 
 function start(){
-    document.getElementById("loesung").textContent = "";
-    
     var WortVorgabe = document.getElementById("WortVorgabe");
 
     verb = Math.floor(Math.random() * verbInfinitif.length);
@@ -40,6 +38,8 @@ function korrigieren(event, verb, person) {
 
         // Überprüfe die Antwort
         if (antwort === richtigeAntwort) {
+            document.getElementById("loesung").textContent = "";
+            
             console.log("richtig");
             document.getElementById("body").style.backgroundColor = "rgb(213, 234, 213)"; // Grün für korrekt
             setTimeout(start, 500); // Starte ein neues Verb nach einer kurzen Verzögerung
