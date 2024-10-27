@@ -39,6 +39,7 @@ function start() {
 function korrigieren(event, verb, person) {
     if (event.key === "Enter") {
         var antwort = document.getElementById("sample3").value;
+        antwort = antwort.toLowerCase().trim();
         // Generiere die richtige Antwort durch Kombination des Stamms und der Endung
         var richtigeAntwort = verbStamm[verb] + endungen[person];
 
