@@ -49,11 +49,11 @@ function korrigieren(event, verb, person) {
         if (antwort === richtigeAntwort) {
             document.getElementById("loesung").textContent = "";
             verbStamm.splice(verb, verb);
-            verbInfinitiv.splice(ver, verb);
+            verbInfinitif.splice(ver, verb);
 
             if (verbStamm.length === 0) {
                 verbStamm = originalVerbStamm;
-                verbInfinitiv = originalVerbInfinitiv;
+                verbInfinitif = originalVerbInfinitif;
             }
 
             console.log("richtig");
