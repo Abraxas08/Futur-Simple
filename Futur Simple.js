@@ -1,5 +1,7 @@
 const verbInfinitif = ["être", "avoir", "faire", "aller", "envoyer", "renvoyer", "venir", "devoir", "apercevoir", "recevoir", "décevoir", "savoir", "vouloir", "voir", "pouvoir", "courir", "mourir", "tenir", "cueillir", "pleuvoir", "falloir", "valoir"];
+const originalVerbInfinitif = ["être", "avoir", "faire", "aller", "envoyer", "renvoyer", "venir", "devoir", "apercevoir", "recevoir", "décevoir", "savoir", "vouloir", "voir", "pouvoir", "courir", "mourir", "tenir", "cueillir", "pleuvoir", "falloir", "valoir"];
 const verbStamm = ["ser", "aur", "fer", "ir", "enverr", "renverr", "viendr", "devr", "apercevr", "recevr", "décevr", "saur", "voudr", "verr", "pourr", "courr", "mourr", "tiendr", "cueiller", "pleuvr", "faudr", "vaudr"];
+const originalVerbStamm = ["ser", "aur", "fer", "ir", "enverr", "renverr", "viendr", "devr", "apercevr", "recevr", "décevr", "saur", "voudr", "verr", "pourr", "courr", "mourr", "tiendr", "cueiller", "pleuvr", "faudr", "vaudr"];
 const endungen = ["ai", "as", "a", "ons", "ez", "ont"];
 const personen = ["je", "tu", "il, elle, on", "nous", "vous", "ils/elles"];
 
@@ -46,6 +48,12 @@ function korrigieren(event, verb, person) {
         // Überprüfe die Antwort
         if (antwort === richtigeAntwort) {
             document.getElementById("loesung").textContent = "";
+            verbStamm.splice(verb, verb);
+            verbInfinitiv.splice(ver, verb);
+
+            if (verbStamm.length === 0):
+                verbStamm = originalVerbStamm;
+                verbInfinitiv = originalVerbInfinitiv;
 
             console.log("richtig");
             document.getElementById("body").style.backgroundColor = "rgb(213, 234, 213)"; // Grün für korrekt
