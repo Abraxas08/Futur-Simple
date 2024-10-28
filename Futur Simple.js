@@ -1,6 +1,6 @@
-const verbInfinitif = ["être", "avoir", "faire", "aller", "envoyer", "renvoyer", "venir", "devoir", "apercevoir", "recevoir", "décevoir", "savoir", "vouloir", "voir", "pouvoir", "courir", "mourir", "tenir", "cueillir", "pleuvoir", "falloir", "valoir"];
+var verbInfinitif = ["être", "avoir", "faire", "aller", "envoyer", "renvoyer", "venir", "devoir", "apercevoir", "recevoir", "décevoir", "savoir", "vouloir", "voir", "pouvoir", "courir", "mourir", "tenir", "cueillir", "pleuvoir", "falloir", "valoir"];
 const originalVerbInfinitif = ["être", "avoir", "faire", "aller", "envoyer", "renvoyer", "venir", "devoir", "apercevoir", "recevoir", "décevoir", "savoir", "vouloir", "voir", "pouvoir", "courir", "mourir", "tenir", "cueillir", "pleuvoir", "falloir", "valoir"];
-const verbStamm = ["ser", "aur", "fer", "ir", "enverr", "renverr", "viendr", "devr", "apercevr", "recevr", "décevr", "saur", "voudr", "verr", "pourr", "courr", "mourr", "tiendr", "cueiller", "pleuvr", "faudr", "vaudr"];
+var verbStamm = ["ser", "aur", "fer", "ir", "enverr", "renverr", "viendr", "devr", "apercevr", "recevr", "décevr", "saur", "voudr", "verr", "pourr", "courr", "mourr", "tiendr", "cueiller", "pleuvr", "faudr", "vaudr"];
 const originalVerbStamm = ["ser", "aur", "fer", "ir", "enverr", "renverr", "viendr", "devr", "apercevr", "recevr", "décevr", "saur", "voudr", "verr", "pourr", "courr", "mourr", "tiendr", "cueiller", "pleuvr", "faudr", "vaudr"];
 const endungen = ["ai", "as", "a", "ons", "ez", "ont"];
 const personen = ["je", "tu", "il, elle, on", "nous", "vous", "ils/elles"];
